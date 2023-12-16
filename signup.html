@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>s'inscrit</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="./img/icon.png" type="image/png" sizes="16x16">
+    
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="signupForm" onsubmit="submitForm(event)">                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="error-message"></div>
+        
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <script src="./js/signup.js"></script>
+        
+    </body>
+
+</html>

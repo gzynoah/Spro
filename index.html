@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araspbest</title>
+    <link rel="icon" href="./img/icon.png" type="image/png" sizes="16x16">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 1000px;
+        }
+
+        #header,
+        #slider,
+        #content,
+        #footer {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        #header {
+            background-color: #f0f0f0; /* Example background color for header */
+            /* Add other styles as needed for your header */
+            height: 80px; /* Set the height as needed */
+        }
+
+        #slider {
+
+            height: 600px; /* Set the height as needed */
+        }
+
+        #content {
+            height: 1800px;
+ 
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <object type="text/html" data="./header.html" height="100%" width="100%"></object>
+    </div>
+
+    <!-- SLIDER -->
+    <div id="slider">
+        <object type="text/html" data="./slider.html" height="100%" width="100%"></object>
+    </div>
+
+    <!-- CONTENT SECTION -->
+    <div id="content">
+        <object type="text/html" data="./content.html" height="100%" width="100%"></object>
+    </div>
+    <script>
+            const params = new URLSearchParams(window.location.search);
+            const signupStatus = params.get('signup');
+            const loginStatus = params.get('login')
+
+    
+            if (signupStatus === 'success') {
+                alert('Sign up successful!');
+            }else if (signupStatus === 'success') {
+                alert('login successful!');
+            }
+
+    </script>
+</body>
+</html>
