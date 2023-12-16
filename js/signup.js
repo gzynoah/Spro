@@ -11,7 +11,7 @@ function submitForm(event) {
     .then(data => {
         var errorMessageElement = document.getElementById('error-message');
         if (data.status === 'success') {
-            window.location.href = 'index.html?signup=success';
+            window.location.href = 'index.php?signup=success';
         } else {
             errorMessageElement.innerHTML = '<p class="error">' + data.message + '</p>';
         }

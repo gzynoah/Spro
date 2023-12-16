@@ -13,7 +13,7 @@ function submitForm(event) {
 
         if (data.status === 'success') {
             // Redirect to index.html on successful login
-            window.location.href = 'index.html?login=success';
+            window.location.href = 'index.php?login=success';
         } else {
             // Display error message on login.html
             errorMessageElement.innerHTML = '<p class="error">' + data.message + '</p>';
