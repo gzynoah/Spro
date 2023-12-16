@@ -6,72 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Araspbest</title>
     <link rel="icon" href="./img/icon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            min-height: 1000px;
-        }
-
-        #header,
-        #slider,
-        #content,
-        #footer {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        #header {
-            background-color: #f0f0f0; /* Example background color for header */
-            /* Add other styles as needed for your header */
-            height: 80px; /* Set the height as needed */
-        }
-
-        #slider {
-
-            height: 600px; /* Set the height as needed */
-        }
-
-        #content {
-            height: 1800px;
- 
-        }
-
-
-    </style>
+  
 </head>
 
 <body>
     <!-- HEADER -->
     <div id="header">
-        <object type="text/html" data="./header.html" height="100%" width="100%"></object>
+        <header>
+            <section>
+                <div id="container">
+                    <div id="shopName"><a href="index.html" target="_blank"> <b>ARASP</b>BEST </a></div>
+                        <div id="loginSignup">
+                            <div><a href="login.html" target="_blank">se connecter</a></div>
+                            <div><a href="signup.html" target="_blank">s'inscrire</a></div>
+                        </div>
+                        <div id="search">
+                            <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
+                        </div>
+                        <div id="login">
+                            <a href="login.html" target="_blank">
+                                <img src="./img/login.png" alt="Login Icon">
+                            </a>
+                        </div>
+                        
+                </div>
+    
+            </section>
+        </header>
     </div>
 
     <!-- SLIDER -->
-    <div id="slider">
-        <object type="text/html" data="./slider.html" height="100%" width="100%"></object>
+    <div>
+        <section>
+            <div id="containerSlider">
+                <div id="slider">
+                    <div class="slidingImage"> <img src="img/img1.png" alt="image1"> </div>
+                    <div class="slidingImage"> <img src="img/img2.png" alt="image2"> </div>
+                    <div class="slidingImage"> <img src="img/img3.png" alt="image3"> </div>
+                    <div class="slidingImage"> <img src="img/img4.png" alt="image4"> </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- CONTENT SECTION -->
     <div id="content">
-        <object type="text/html" data="./content.html" height="100%" width="100%"></object>
-    </div>
-    <script>
-            const params = new URLSearchParams(window.location.search);
-            const signupStatus = params.get('signup');
-            const loginStatus = params.get('login')
+        <div id="mainContainer">
 
+            <h1 class="title"> MCU et Capteur </h1>
+            <section id="containerMcuCapteur">
+                
+                <div class="box">
+                    <a href="/contentDetails.html?id=1">
+                        <img src="./img/nano.png" alt="arduino">
+                        <div id="details">
+                            <h3 class="produit">Arduino nano</h3>
+                            <h4 class="type">MCU</h4>
+                            <h2 class="prix">200 dh</h2>
+                        </div>
+                    </a>
+                </div>
     
-            if (signupStatus === 'success') {
-                alert('Sign up successful!');
-            }else if (signupStatus === 'success') {
-                alert('login successful!');
-            }
-
-    </script>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/arduino_uno.png" alt="arduino1">
+                        <div id="details">
+                            <h3 class="produit">arduino uno</h3>
+                            <h4 class="type">MCU</h4>
+                            <h2 class="prix">250 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/raspberrypi_3.png" alt="raspberrypi">
+                        <div id="details">
+                            <h3 class="produit">raspberry pi 3</h3>
+                            <h4 class="type">Computer on board</h4>
+                            <h2 class="prix">2000 dh</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/esp.png" alt="esp32">
+                        <div id="details">
+                            <h3 class="produit">esp 32</h3>
+                            <h4 class="type">MCU</h4>
+                            <h2 class="prix">150 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/pi_camera_module.png" alt="Picamera">
+                        <div id="details">
+                            <h3 class="produit">camera module for RPi</h3>
+                            <h4 class="type">capteur</h4>
+                            <h2 class="prix">200 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/stm32.png" alt="stm32">
+                        <div id="details">
+                            <h3 class="produit">stm32</h3>
+                            <h4 class="type">MCU</h4>
+                            <h2 class="prix">300 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/gas_capteur.png" alt="gas">
+                        <div id="details">
+                            <h3 class="produit">gas capture</h3>
+                            <h4 class="type">capteur</h4>
+                            <h2 class="prix">20 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="/contentDetails.html?id=2">
+                        <img src="./img/ultra_son.png" alt="ultrason">
+                        <div id="details">
+                            <h3 class="produit">ultrason capteur</h3>
+                            <h4 class="type">capteur</h4>
+                            <h2 class="prix">20 DH</h2>
+                        </div>
+                    </a>
+                </div>
+                
+    
+                
+            </section>
+    
+            <h1 class="title"> composant passif </h1>
+            <section id="containerPassif">
+                <div class="box">
+                    <a href="/contentDetails.html?id=3">
+                        <img src="./img/resistor.png" alt="Resistance">
+                        <div id="details">
+                            <h3 class="produit">Resistance pack</h3>
+                            <h4>passif</h4>
+                            <h2 class="prix">50 DH</h2>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="box">
+                        <img src="./img/led.png" alt="LED">
+                        <div id="details">
+                            <h3 class="produit">LED pack</h3>
+                            <h4 class="type">passif</h4>
+                            <h2 class="prix">50 DH</h2>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

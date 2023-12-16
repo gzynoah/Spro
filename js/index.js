@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
+    const params = new URLSearchParams(window.location.search);
+    const signupStatus = params.get('signup');
+    const loginStatus = params.get('login');
+
+    if (signupStatus === 'success') 
+    {
+        alert('Sign up successful!');
+
+    } else if (loginStatus === 'success') 
+    { 
+        alert('Login successful!');
+    }
+
+    // slider
+    
     const slider = document.getElementById('slider');
     const slides = document.querySelectorAll('.slidingImage');
     let currentIndex = 0;
@@ -13,7 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
         updateSlider();
     }
 
-
-
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    setInterval(nextSlide, 3000); 
 });
