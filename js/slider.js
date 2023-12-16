@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const container = document.getElementById('containerSlider');
     const slider = document.getElementById('slider');
     const slides = document.querySelectorAll('.slidingImage');
-
     let currentIndex = 0;
 
     function updateSlider() {
-        const newPosition = currentIndex * 100 + '%';
+        const newPosition = -currentIndex * 100 + '%';
         slider.style.transform = 'translateX(' + newPosition + ')';
     }
 
@@ -15,5 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateSlider();
     }
 
-    setInterval(nextSlide, 1000); 
+
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
 });
